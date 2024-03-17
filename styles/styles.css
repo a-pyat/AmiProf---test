@@ -464,7 +464,6 @@ body {
 }
 
 .projects__item {
-  position: relative;
   display: grid;
   justify-content: center;
   grid-template-columns: 209px 556px 286px;
@@ -546,6 +545,7 @@ body {
   height: 42px;
   background-color: #dc911b;
   border: none;
+  position: relative;
 }
 
 .button-more::before {
