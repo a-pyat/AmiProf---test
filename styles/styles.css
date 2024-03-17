@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/roboto-regular.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/roboto-light.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/roboto-bold.woff2) format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+  min-width: 1280px;
+  height: 100%;
+  margin: 0;
+}
+
+.page-header {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(220, 145, 27, 0.6);
+  padding: 0 300px;
+}
+
+.page-header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 17px 0 5px;
+}
+
+.page-nav__list {
+  display: flex;
+  gap: 42px;
+  margin-left: 65px;
+  margin-right: 67px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.page-nav__item {
+}
+
+.page-nav__link {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #2d2d2d;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+.page-nav__number-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 191px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.page-nav__number {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2d2d2d;
+  text-decoration: none;
+
+  padding-left: 24px;
+  padding-right: 18px;
+}
+
+.page-nav__number-button {
+  position: relative;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #2d2d2d;
+  border: none;
+  text-decoration: none;
+  padding-left: 71px;
+  padding-right: 18px;
+}
+
+.page-nav__number-button::before {
+  content: "";
+  position: absolute;
+  right: 16px;
+  left: 72px;
+  bottom: 0px;
+  width: 101px;
+  border-bottom: 1px dashed #2d2d2d;
+}
+
+.page-header__main-promo {
+}
+
+.main-promo {
+}
+
+.main-promo__wrapper {
+  background: url(../photo/promo-img.png) no-repeat right;
+  /* background-color: #dc911b; */
+  background-position-x: 365px;
+}
+
+.main-promo__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  color: #3e3e3e;
+  width: 448px;
+  margin: 0;
+  padding-top: 192px;
+  padding-bottom: 259px;
+  text-transform: uppercase;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 99px 351px 0 362px;
+}
+
+.services__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.services__item {
+  display: flex;
+}
+
+.services__item:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.services__item-img {
+  display: block;
+  /* margin-right: 141px; */
+}
+
+.services__item-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+}
+
+.services__item-text-wrapper--first {
+  margin-left: 141px;
+}
+
+.services__item-text-wrapper--second {
+  margin-left: 0;
+  margin-right: 179px;
+}
+
+.services__item-text-wrapper--three {
+  margin-left: 132px;
+}
+
+.services__item-text-wrapper--four {
+  margin-left: 0;
+  margin-right: 74px;
+}
+
+.services__item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-transform: uppercase;
+
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.services__item-description {
+  width: 575px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.services__item-link {
+  width: 166px;
+  font-size: 14px;
+  line-height: 120%;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #dc911b;
+  padding: 11px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 33px;
+  align-self: flex-end;
+}
