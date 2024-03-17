@@ -15,8 +15,10 @@
 <body>
   <header class="page-header">
     <nav class="page-header__nav page-nav">
-      <img class="page-nav__image" src="/photo/logo.png" width="192" height="75"
-        alt="АмиПроф - центр обучения и оценки рисков">
+      <a class="page-nav__image-link" href="#">
+        <img class="page-nav__image" src="/photo/logo.png" width="192" height="75"
+          alt="АмиПроф - центр обучения и оценки рисков">
+      </a>
       <ul class="page-nav__list">
         <li class="page-nav__item">
           <a class="page-nav__link" href="#">О нас</a>
@@ -106,8 +108,8 @@
         </li>
 
         <li class="services__item">
-          <img class="services__item-img" src="/photo/services-four.png" width="434" height="323"
-            alt="Человек отвечающий за обучение лиц с ограниченными возможностями">
+          <img class="services__item-img services__item-img--four" src="/photo/services-four.png" width="434"
+            height="323" alt="Человек отвечающий за обучение лиц с ограниченными возможностями">
           <div class="services__item-text-wrapper services__item-text-wrapper--four">
             <h3 class="services__item-title">Обучение лиц с ограниченными<br>возможностями здоровья</h3>
             <p class="services__item-description">Создаем и интегрируем актуальные системы безопасности, осуществляем
@@ -134,15 +136,15 @@
             <img class="reviews__item-img" src="/photo/review.png" width="242" height="341" alt="Отзыв клиента">
           </li>
         </ul>
-        <div class="reviews__button-wrapper">
-          <button class="reviews__button button-more reviews__button--back" type="button"><span
-              class="visually-hidden">Пролистать
-              назад</span></button>
-          <button class="reviews__button button-more reviews__button--next" type="button"><span
-              class="visually-hidden">Пролистать
-              вперед</span></button>
+        <div class="reviews__container-wrapper">
+          <div class="reviews__button-wrapper">
+            <button class="reviews__button reviews__button--back" type="button"><span class="visually-hidden">Пролистать
+                назад</span></button>
+            <button class="reviews__button reviews__button--next" type="button"><span class="visually-hidden">Пролистать
+                вперед</span></button>
+          </div>
+          <a class="reviews__button-more" href="#">показать все</a>
         </div>
-        <button class="reviews__button-more" type="button">показать все</button>
       </div>
     </section>
 
@@ -156,7 +158,7 @@
               style="background-color: #DC911B; width: 556px; height: 313px;"></div>
             <!-- Заменить код выше, на код ниже, когда появится фото проекта  -->
             <!-- <img class="projects__item-img" src="" width="556" height="313" alt=""> -->
-            <p class="projects__item-resription">Очень много текста примерно
+            <p class="projects__item-description">Очень много текста примерно
               на три строчки, ибо больше
               никто читать не будет.</p>
             <time class="projects__item-time" datetime="2020-12">12/2020</time>
@@ -166,7 +168,7 @@
           <li class="projects__item">
             <h3 class="projects__item-title">название проекта 2</h3>
             <img class="projects__item-img" src="/photo/project-img-second.jpg" width="556" height="313" alt="">
-            <p class="projects__item-resription">Очень много текста примерно
+            <p class="projects__item-description">Очень много текста примерно
               на три строчки, ибо больше
               никто читать не будет.</p>
             <time class="projects__item-time" datetime="2020-12">12/2020</time>
@@ -178,9 +180,9 @@
     </section>
 
     <section class="news">
-      <h2 class="news__title"></h2>
-      <img class="news__img" src="/photo/news-img.png" width="115" height="265" alt="Человек читает новости">
-      <div>
+      <h2 class="news__title">рубрика важных новостей</h2>
+      <!-- <img class="news__img" src="/photo/news-img.png" width="115" height="265" alt="Человек читает новости"> -->
+      <div class="news__blog-wrapper">
         <article class="news__blog blog">
           <a class="blog__title-link" href="#">
             <h3 class="blog__title">важная Новость</h3>
@@ -212,27 +214,29 @@
     </section>
 
     <section class="questions">
-      <h2 class="questions__title"></h2>
-      <p class="questions__description"></p>
-      <form class="questions__form form" action="https://echo.htmlacademy.ru/" method="post">
-        <legend class="visually-hidden">Форма обратной связи</legend>
-        <ul class="form__list">
-          <li class="form__item">
-            <label class="visually-hidden" for="contact-name">Ваше имя</label>
-            <input class="form__input" type="text" name="name" id="contact-name" placeholder="Ваше имя" required />
-          </li>
-          <li class="form__item">
-            <label class="visually-hidden" for="contact-phone">Телефон:*</label>
-            <input class="form__input" type="tel" name="contact-phone" id="contact-phone"
-              placeholder="+7 (123) 456 78 89" required />
-          </li>
-        </ul>
-        <button class="questions__form-button " type="submit"><span>оставить заявку</span></button>
-      </form>
+      <div class="questions__wrapper">
+        <h2 class="questions__title">Вопросы?</h2>
+        <p class="questions__description">Оставьте заявку и мы с Вами свяжемся</p>
+        <form class="questions__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <legend class="visually-hidden">Форма обратной связи</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__label visually-hidden" for="contact-name">Ваше имя</label>
+              <input class="form__input" type="text" name="name" id="contact-name" placeholder="Ваше имя" required />
+            </li>
+            <li class="form__item">
+              <label class="visually-hidden" for="contact-phone">Телефон:*</label>
+              <input class="form__input" type="tel" name="contact-phone" id="contact-phone"
+                placeholder="+7 (123) 456 78 89" required />
+            </li>
+          </ul>
+          <button class="questions__form-button" type="submit"><span>оставить заявку</span></button>
+        </form>
+      </div>
     </section>
 
     <section class="useful-articles">
-      <h2 class="useful-articles__title"></h2>
+      <h2 class="useful-articles__title">Полезные статьи</h2>
       <div class="useful-articles__wrapper">
         <article class="useful-articles__articles articles">
           <a class="articles__title-link" href="#">
@@ -273,34 +277,43 @@
       <a class="useful-articles__link" href="#">все статьи</a>
     </section>
 
-    <section class="certificates">
-      <h2 class="certificates__title">Сертификаты</h2>
-      <div class="certificates__list-wrapper">
-        <ul class="certificates__list">
-          <li class="certificates__item">
-            <img class="certificates__item-img" src="/photo/review.png" width="242" height="341" alt="Сертификат">
+
+    <!-- Для упрощения верстки использовал предыдущие стили из блока reviews,
+      так как верстка одинаковая, если же необходимо сделать уникальную верстку,
+      то добавляются уникальные классы -->
+    <section class="certificates reviews">
+      <h2 class="certificates__title reviews__title">Сертификаты</h2>
+      <div class="certificates__list-wrapper reviews__list-wrapper">
+        <ul class="certificates__list reviews__list">
+          <li class="certificates__item reviews__item">
+            <img class="certificates__item-img reviews__item-img" src="/photo/review.png" width="242" height="341"
+              alt="Сертификат">
           </li>
-          <li class="certificates__item">
-            <img class="certificates__item-img" src="/photo/review.png" width="242" height="341" alt="Сертификат">
+          <li class="reviews__item">
+            <img class="certificates__item-img reviews__item-img" src="/photo/review.png" width="242" height="341"
+              alt="Сертификат">
           </li>
-          <li class="certificates__item">
-            <img class="certificates__item-img" src="/photo/review.png" width="242" height="341" alt="Сертификат">
+          <li class="reviews__item">
+            <img class="certificates__item-img reviews__item-img" src="/photo/review.png" width="242" height="341"
+              alt="Сертификат">
           </li>
         </ul>
-        <div class="certificates__button-wrapper">
-          <button class="certificates__button button-more certificates__button--back" type="button"><span
-              class="visually-hidden">Пролистать
-              назад</span></button>
-          <button class="certificates__button button-more certificates__button--next" type="button"><span
-              class="visually-hidden">Пролистать
-              вперед</span></button>
+        <div class="certificates__container-wrapper reviews__container-wrapper">
+          <div class="certificates__button-wrapper reviews__button-wrapper">
+            <button class="certificates__button certificates__button--back reviews__button reviews__button--back"
+              type="button"><span class="visually-hidden">Пролистать
+                назад</span></button>
+            <button class="certificates__button certificates__button--next reviews__button reviews__button--next"
+              type="button"><span class="visually-hidden">Пролистать
+                вперед</span></button>
+          </div>
+          <a class="certificates__button-more reviews__button-more" href="#">показать все</a>
         </div>
-        <button class="certificates__button-more" type="button">показать все</button>
       </div>
     </section>
 
     <section class="clients">
-      <h2 class="clients__title"></h2>
+      <h2 class="clients__title">Наши клиенты</h2>
       <ul class="clients__list">
         <li class="clients__item">
           <img class="clients__img" src="/photo/brend-photo/vega.png" width="220" height="60" alt="Бренд Вега">
@@ -331,51 +344,59 @@
   </main>
 
   <footer class="main-footer">
-    <section class="footer-nav">
-      <h2 class="visually-hidden">Список страниц</h2>
-      <ul class="footer-nav__list-top">
-        <li class="footer-nav__item-top">
-          <a class="footer-nav__link-top" href="#">
-            <h3 class="footer-nav__title-top">О нас</h3>
-          </a>
-          <ul class="footer-nav__list">
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Новости</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Статьи</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Сертификаты</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Объекты</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Склад</a></li>
-          </ul>
-        </li>
-        <li class="footer-nav__item-top">
-          <a class="footer-nav__link-top" href="#">
-            <h2 class="footer-nav__title-top">Каталог</h2>
-          </a>
-          <ul>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Прайсы</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Акции</a></li>
-          </ul>
-        </li>
-        <li class="footer-nav__item-top">
-          <a class="footer-nav__link-top" href="#">
-            <h2 class="footer-nav__title-top">Контакты</h2>
-          </a>
-        </li>
-      </ul>
-    </section>
+    <div class="main-footer__wrapper">
+      <section class="footer-nav">
+        <h2 class="visually-hidden">Список страниц</h2>
+        <ul class="footer-nav__list-top">
+          <li class="footer-nav__item-top footer-nav__item-top--first">
+            <a class="footer-nav__link-top" href="#">
+              <h3 class="footer-nav__title-top">О нас</h3>
+            </a>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Новости</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Статьи</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Сертификаты</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Объекты</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Склад</a></li>
+            </ul>
+          </li>
+          <li class="footer-nav__item-top footer-nav__item-top--second">
+            <a class="footer-nav__link-top" href="#">
+              <h2 class="footer-nav__title-top">Каталог</h2>
+            </a>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Прайсы</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Акции</a></li>
+            </ul>
+          </li>
+          <li class="footer-nav__item-top footer-nav__item-top--three">
+            <a class="footer-nav__link-top" href="#">
+              <h2 class="footer-nav__title-top">Контакты</h2>
+            </a>
+          </li>
+        </ul>
+      </section>
 
-    <section class="footer-feedback">
-      <form>
-        <input type="text" name="text" class="search" placeholder="Поиск">
-      </form>
-      <a href="mailto:hello@stkrost.ru">hello@stkrost.ru</a>
-      <address>г. Челябинск</address>
-      <a href="tel:+73517000771">+7 (351) 700-07-71</a>
-      <button type="button">Обратный звонок</button>
-    </section>
+      <section class="footer-feedback">
+        <form class="footer-feedback__form form">
+          <label class="form__label">
+            <input class="form__search" type="text" name="text" placeholder="Поиск">
+            <span class="form__search-icon"></span>
+          </label>
+        </form>
+        <div class="footer-feedback__cb-wrapper">
+          <a class="footer-feedback__mail" href="mailto:hello@stkrost.ru">hello@stkrost.ru</a>
+          <address class="footer-feedback__address">г. Челябинск</address>
+          <a class="footer-feedback__tel" href="tel:+73517000771">+7 (351) 700-07-71</a>
+          <button class="footer-feedback__button-cb" type="button">Обратный звонок</button>
+        </div>
+      </section>
+    </div>
 
-    <div>
-      <p>© 2020 Universe, Все права защищены</p>
-      <img src="/photo/logo-intec.png" width="100" height="26" alt="Компания INTEC - разработка сайтов">
+    <div class="footer-copyright">
+      <p class="footer-copyright__text">© 2020 Universe, Все права защищены</p>
+      <img class="footer-copyright__logo" src="/photo/logo-intec.png" width="100" height="26"
+        alt="Компания INTEC - разработка сайтов">
     </div>
   </footer>
 </body>
